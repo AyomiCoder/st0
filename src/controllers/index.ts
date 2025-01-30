@@ -6,7 +6,7 @@ export class IndexController {
         const response = {
             email: "alukoayomide623@gmail.com",
             current_datetime: getCurrentDateTime(),
-            github_url: "https://github.com/AyomiCoder/st0.git"
+            github_url: "https://github.com/AyomiCoder/st0"
         };
         res.status(200).json(response);
     }
