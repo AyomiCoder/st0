@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import compression from 'compression';
 import { setRoutes } from './routes/index';
 
 const app = express();
@@ -17,3 +18,7 @@ setRoutes(app);
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+function notImplementedCompression(): any {
+  throw new Error('Function not implemented.');
+}
