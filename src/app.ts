@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 3000;
 // Use only necessary middleware
 app.use(cors());
 app.use(express.json());
+app.use(compression()); 
 
 // Set routes
 setRoutes(app);
